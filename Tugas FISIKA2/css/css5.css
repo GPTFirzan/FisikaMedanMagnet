@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+}
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  padding: 10px 20px;
+}
+.menu a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 70%;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container p {
+  text-align: justify;
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    top: 48px;
+    left: 0;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+}
